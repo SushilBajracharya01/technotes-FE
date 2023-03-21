@@ -9,9 +9,9 @@ export default function NewNote() {
     }),
   });
 
-  if (!users?.length) return <Loading />;
+  if (!users?.users?.length) return <Loading />;
 
-  const content = <NewNoteForm users={users} />;
+  const content = <NewNoteForm users={users?.users} />;
 
   return content;
 }
